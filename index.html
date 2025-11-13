@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>gpropf • Home</title>
+  <meta name="description" content="Welcome to gpropf.github.io — personal site" />
+
+  <!-- Simple, self-contained styling -->
+  <style>
+    :root {
+      --bg: #0f1724;
+      --card: #0b1220;
+      --muted: #9aa4b2;
+      --accent: #4f46e5;
+      --text: #e6eef6;
+    }
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      background:linear-gradient(180deg,var(--bg) 0%, #061026 100%);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:2rem;
+    }
+    .container{
+      max-width:900px;
+      width:100%;
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.04);
+      border-radius:12px;
+      padding:2rem;
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+    }
+    header{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+    h1{margin:0;font-size:1.5rem}
+    p.lead{margin:0;color:var(--muted)}
+    nav a{
+      color:var(--text);
+      text-decoration:none;
+      margin-left:1rem;
+      font-size:0.95rem;
+    }
+    .hero{
+      display:grid;
+      gap:1.25rem;
+      grid-template-columns: 1fr auto;
+      align-items:center;
+      margin-top:1.25rem;
+    }
+    .cta{
+      background:linear-gradient(90deg,var(--accent),#7c3aed);
+      color:white;
+      padding:0.6rem 1rem;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      box-shadow: 0 6px 18px rgba(79,70,229,0.22);
+    }
+    .meta{color:var(--muted);font-size:0.9rem}
+    footer{margin-top:1.5rem;color:var(--muted);font-size:0.85rem;text-align:center}
+    @media (max-width:640px){
+      .hero{grid-template-columns:1fr}
+      nav a{margin-left:0.5rem}
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main">
+    <header>
+      <div>
+        <h1>gpropf</h1>
+        <p class="lead">Personal site — welcome</p>
+      </div>
+      <nav aria-label="Main">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
+      </nav>
+    </header>
+
+    <section class="hero" aria-labelledby="welcome">
+      <div>
+        <h2 id="welcome">Hi — I'm gpropf</h2>
+        <p class="meta">This is the root page of your GitHub Pages site. Edit this file (index.html) in the repository gpropf.github.io to change what appears at https://gpropf.github.io/.</p>
+        <p style="margin-top:0.75rem">Use the links above or replace this content with your own HTML. If you prefer Markdown/Jekyll, create an index.md instead.</p>
+      </div>
+
+      <div style="text-align:right">
+        <a class="cta" href="https://github.com/gpropf/gpropf.github.io" target="_blank" rel="noopener">View repo</a>
+      </div>
+    </section>
+
+    <footer>
+      Built with plain HTML — update index.html at your repo root (or /docs for a project site).
+    </footer>
+  </main>
+</body>
+</html>
